@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="/static/css/style.css">
     <title>Banterbird</title>
     <script src="/static/js/app.js" defer></script>
 </head>
 <body>
-    <h1>Banterbird</h1>
+    <h1 class = "colorPgTools" >Banterbird</h1>
     <div>
         Logged in as: <strong id="username">admin</strong>
     </div>
     <div>
-        <h3>New Post</h3>
+        <h3 ID = "ID1CA">New Post</h3>
         <textarea id="postInput" placeholder="What's on your mind?"></textarea><br>
         <button onclick="submitPost()">Tweet</button>
     </div>
@@ -18,7 +19,7 @@
     <h3>Feed</h3>
     <div id="feed"></div>
 
-    <template id="post-template">
+    <template id="post-template" class = "font">
         <div class="post">
             <p><strong class="username"></strong>: <span class="message"></span></p>
             <small class="timestamp"></small>
